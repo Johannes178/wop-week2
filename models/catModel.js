@@ -21,6 +21,8 @@ const cats = [
   },
 ];
 
+//TODO tee funktio joka palauttaa yhden kissan id:n perusteella
+
 module.exports = {
   cats,
 };
