@@ -1,5 +1,4 @@
 'use strict';
-//catController
 const catModel = require ('../models/catModel')
 
 const cats = [
@@ -23,6 +22,15 @@ const cats = [
 
 //TODO tee funktio joka palauttaa yhden kissan id:n perusteella
 
+const getCat = (id) => {
+    const kissa = cats.filter((cat) => {
+      if(cat.id === id) return cat;
+    });
+    return kissa[0];
+};
+
+
 module.exports = {
   cats,
+  getCat,
 };
